@@ -10,8 +10,8 @@ if ($fh === FALSE)
 $ba = array();
 $clients=array();
 stream_set_blocking($fh, 0);
-define(EOF, "\n");
-define(LOGIN_LIMIT, "15724800");
+define("EOF", "\n");
+define("LOGIN_LIMIT", "15724800");
 
 $redis = new Redis();
 $doconnect = true;
